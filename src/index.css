@@ -11,16 +11,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .star-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
+  unicode-bidi: bidi-override;
+  direction: ltr;
+}
+.star-container > span {
+  display: inline-block;
+  position: relative;
 }
 .unfilled,
 .filled {
   font-size: 50px;
   cursor: pointer;
   color: #ffce30;
+}
+.star-container > span:hover:before,
+.star-container > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
 }
 .pointer-none {
   pointer-events: none;
