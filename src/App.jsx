@@ -1,4 +1,6 @@
 import "./App.css";
+import Accordian from "./components/Accordian";
+import Carousal from "./components/Carousal";
 import StarRating from "./components/starRating";
 import Tabs from "./components/tabs";
 
@@ -9,6 +11,10 @@ function App() {
       <StarRating />
       <h2>Tabs</h2>
       <Tabs />
+      <h2>Accordian </h2>
+      <Accordian />
+      <h2>Carousal </h2>
+      <Carousal />
     </div>
   );
 }
